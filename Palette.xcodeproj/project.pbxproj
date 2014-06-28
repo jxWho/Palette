@@ -11,6 +11,9 @@
 		CB237E321955D3DC00B0C6BC /* userManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB237E311955D3DC00B0C6BC /* userManager.swift */; };
 		CB3A340A19567CA200859270 /* userManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3A340919567CA200859270 /* userManager.m */; };
 		CB3A340C1956AD9800859270 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB3A340B1956AD9800859270 /* README.md */; };
+		CBD5D197195C1856005BD290 /* timeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D196195C1856005BD290 /* timeNode.swift */; };
+		CBD5D199195C24F1005BD290 /* subtitleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D198195C24F1005BD290 /* subtitleNode.swift */; };
+		CBD5D19D195C7AE0005BD290 /* KKLableTTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D19C195C7ADF005BD290 /* KKLableTTF.swift */; };
 		CBDF832119504CAC00B3905D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF832019504CAC00B3905D /* AppDelegate.swift */; };
 		CBDF832519504CAC00B3905D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF832419504CAC00B3905D /* GameScene.swift */; };
 		CBDF832719504CAC00B3905D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF832619504CAC00B3905D /* GameViewController.swift */; };
@@ -71,6 +74,9 @@
 		CB3A340819567CA200859270 /* userManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userManager.h; sourceTree = "<group>"; };
 		CB3A340919567CA200859270 /* userManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userManager.m; sourceTree = "<group>"; };
 		CB3A340B1956AD9800859270 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBD5D196195C1856005BD290 /* timeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timeNode.swift; sourceTree = "<group>"; };
+		CBD5D198195C24F1005BD290 /* subtitleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subtitleNode.swift; sourceTree = "<group>"; };
+		CBD5D19C195C7ADF005BD290 /* KKLableTTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLableTTF.swift; sourceTree = "<group>"; };
 		CBDF831B19504CAC00B3905D /* Palette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDF831F19504CAC00B3905D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBDF832019504CAC00B3905D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,20 +142,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB237E2E1955AA6700B0C6BC /* KKMenu */ = {
+		CB237E2E1955AA6700B0C6BC /* KK */ = {
 			isa = PBXGroup;
 			children = (
 				CBE6DFF01952A4AC00D8B0C6 /* KKMenu.swift */,
 				CBE6DFF21952B08400D8B0C6 /* KKMenuItem.swift */,
+				CBD5D19C195C7ADF005BD290 /* KKLableTTF.swift */,
 			);
-			name = KKMenu;
+			name = KK;
 			sourceTree = "<group>";
 		};
 		CBDF831219504CAC00B3905D = {
 			isa = PBXGroup;
 			children = (
 				CB3A340B1956AD9800859270 /* README.md */,
-				CB237E2E1955AA6700B0C6BC /* KKMenu */,
+				CB237E2E1955AA6700B0C6BC /* KK */,
 				CBDF834119504F9F00B3905D /* Resource */,
 				CBDF831D19504CAC00B3905D /* Palette */,
 				CBDF833419504CAC00B3905D /* PaletteTests */,
@@ -176,6 +183,8 @@
 				CBDF832419504CAC00B3905D /* GameScene.swift */,
 				CBDF838319517D9100B3905D /* firstScene.swift */,
 				CB237E2F1955C19A00B0C6BC /* NewGameScene.swift */,
+				CBD5D198195C24F1005BD290 /* subtitleNode.swift */,
+				CBD5D196195C1856005BD290 /* timeNode.swift */,
 				CBDF832619504CAC00B3905D /* GameViewController.swift */,
 				CBDF832819504CAC00B3905D /* Main.storyboard */,
 				CB3A340719567CA100859270 /* Palette-Bridging-Header.h */,
@@ -388,12 +397,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD5D199195C24F1005BD290 /* subtitleNode.swift in Sources */,
 				CBDF832519504CAC00B3905D /* GameScene.swift in Sources */,
 				CB237E301955C19A00B0C6BC /* NewGameScene.swift in Sources */,
+				CBD5D19D195C7AE0005BD290 /* KKLableTTF.swift in Sources */,
 				CB3A340C1956AD9800859270 /* README.md in Sources */,
 				CBDF838419517D9100B3905D /* firstScene.swift in Sources */,
 				CB3A340A19567CA200859270 /* userManager.m in Sources */,
 				CBDF832719504CAC00B3905D /* GameViewController.swift in Sources */,
+				CBD5D197195C1856005BD290 /* timeNode.swift in Sources */,
 				CBE6DFF31952B08400D8B0C6 /* KKMenuItem.swift in Sources */,
 				CBDF832119504CAC00B3905D /* AppDelegate.swift in Sources */,
 				CB237E321955D3DC00B0C6BC /* userManager.swift in Sources */,

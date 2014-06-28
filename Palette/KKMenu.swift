@@ -102,10 +102,12 @@ extension KKMenu
     {
         
         
-        assert( _selectedItem, "No item is selected" )
+        //assert( _selectedItem, "No item is selected" )
         
-        _selectedItem!.unselected()
-        _selectedItem!.activate()
+        if _selectedItem {
+            _selectedItem!.unselected()
+            _selectedItem!.activate()
+        }
         
         
         println("touches ended")
